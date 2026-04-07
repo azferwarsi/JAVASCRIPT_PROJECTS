@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design Your Dream - Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <img src="dyd.png" alt="Design Your Dream Logo" class="logo" />
+    <h1>Design Your Dream </h1>
+    <h3>Architect & Engineering consultant</h3>
+    <h2>DYD- QUIZ</h1>
+
+    <input type="text" id="player-name" placeholder="Enter your name" required />
+
+    <div id="timer">Time Left: <span id="time">05:00</span></div>
+
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. Where is 'Design Your Dream' located?</p>
+        <label><input type="radio" name="q1" value="a" /> Patna,Bihar</label>
+        <label><input type="radio" name="q1" value="b" /> Kishanganj,Bihar</label>
+        <label><input type="radio" name="q1" value="c" /> Delhi</label>
+      </div>
+
+      <div class="question">
+        <p>2. What is Ar. Abu Tahsin Akhter's profession?</p>
+        <label><input type="radio" name="q2" value="a" /> Civil Engineer</label>
+        <label><input type="radio" name="q2" value="b" /> Advocate</label>
+        <label><input type="radio" name="q2" value="c" /> Architect</label>
+      </div>
+
+      <div class="question">
+        <p>3. who is the founder of Design Your Dream?</p>
+        <label><input type="radio" name="q3" value="a" /> Ar.Abu Tahsin Akhter</label>
+        <label><input type="radio" name="q3" value="b" />Er.Abu Sharib Akhter</label>
+        <label><input type="radio" name="q3" value="c" />Mr.Abu Hasin Akhter</label>
+      </div>
+
+      <div class="question">
+        <p>4. What type of service is provided by 'Design Your Dream'?</p>
+        <label><input type="radio" name="q4" value="a" /> Software Development</label>
+        <label><input type="radio" name="q4" value="b" /> Architectural Design and Construction</label>
+        <label><input type="radio" name="q4" value="c" /> Event Management</label>
+      </div>
+
+      <div class="question">
+        <p>5. What is the goal of most DYD clients?</p>
+        <label><input type="radio" name="q5" value="a" /> Building custom-designed spaces</label>
+        <label><input type="radio" name="q5" value="b" /> Buying furniture</label>
+        <label><input type="radio" name="q5" value="c" /> Renting property</label>
+      </div>
+
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

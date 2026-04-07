@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav baar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <img class="logo" class="mobile" src="dyd logo (1).png" alt="" height="50px" width="50px">
+            <h3>Design Your Dream</h3>
+        </div>
+        <ul class="shown">
+            <li class="mobile" ><a href="#">Home</a></li>
+            <li class="mobile" ><a href="#">About</a></li>
+            <li class="mobile" ><a href="#">Contact</a></li>
+            <li class="bar"><a href=""><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+
+        <ul class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+        const barEle=document.querySelector(".bar")
+const hideEle=document.querySelector(".hide")
+const closeEle=document.querySelector(".close")
+barEle.addEventListener("click",()=>{
+    hideEle.style.display="block"
+})
+
+closeEle.addEventListener("click",()=>{
+    hideEle.style.display="none"
+})
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

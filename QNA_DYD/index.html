@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design Your Dream | Q&A</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      background-color: #222;
+      color: #fff;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background-color: #fff;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item input {
+      display: none;
+    }
+
+    .faq-item label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      background: linear-gradient(to right, #4CAF50, #45A29E);
+      color: white;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .faq-item label:hover {
+      background: linear-gradient(to right, #45A29E, #4CAF50);
+    }
+
+    .faq-item label::after {
+      content: '+';
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .faq-item input:checked + label::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      background-color: #fafafa;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .faq-item input:checked ~ .content {
+      max-height: 300px;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: #222;
+      color: #ccc;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .faq-item label {
+        font-size: 1rem;
+      }
+
+      .faq-item label::after {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Design Your Dream - Q&A</h1>
+    <p>Your Queries Answered</p>
+  </header>
+
+  <section class="faq-container">
+
+    <div class="faq-item">
+      <input type="checkbox" id="q1">
+      <label for="q1">What is Design Your Dream?</label>
+      <div class="content">
+        <p>Design Your Dream is an architect and engineering consultancy based in Kishanganj, Bihar, offering complete planning, designing, and construction solutions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="q2">
+      <label for="q2">What services do you offer?</label>
+      <div class="content">
+        <p>We offer architectural design, structural design, 3D modeling, site supervision, interior design, and complete project consultancy.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="q3">
+      <label for="q3">Where are you located?</label>
+      <div class="content">
+        <p>We are located in Kishanganj, Bihar. You can contact us for online or on-site consultations.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="q4">
+      <label for="q4">How to contact Design Your Dream?</label>
+      <div class="content">
+        <p>You can reach us at <strong>+91 8920789706</strong> or follow us on social media for updates and bookings.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Design Your Dream | All rights reserved
+  </footer>
+
+</body>
+</html>

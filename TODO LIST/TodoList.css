@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    margin-top: 50px;
+    /* background-color:#121212 */
+    background-color:azure;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    /* color:azure; */
+    font-size: 25px;
+    color:black;
+}
+li button{
+    background-color: red;
+    font-size: 15px;
+}

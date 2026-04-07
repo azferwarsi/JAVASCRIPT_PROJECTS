@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+span{
+    background: url("myframe.jpg");
+    /* background: url("tahsin-removebg-preview\ \(1\)\ -\ Copy.png"); */
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    animation: animate 8s linear;
+    pointer-events: none;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 1;
+    }
+}
